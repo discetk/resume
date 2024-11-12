@@ -1,0 +1,17 @@
+@font-face {
+    font-family: "SfPro-Bold";
+    font-style: normal;
+    font-weight: 700;
+    src:local(''),
+    url("../fonts/SFProDisplay-Bold.woff") format("woff"),
+    url("../fonts/SFProDisplay-Bold.woff2") format("woff2"),
+}
+
+@font-face {
+    font-family: "SfPro-Regular";
+    font-style: normal;
+    font-weight: 600;
+    src:local(''),
+    url("../fonts/SFProDisplay-Regular.woff") format("woff"),
+    url("../fonts/SFProDisplay-Regular.woff2") format("woff2"),
+}

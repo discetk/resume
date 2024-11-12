@@ -1,0 +1,132 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before, /*псевдоклассы*/
+*::after{
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4 {
+    margin: 0;
+}
+
+a {
+    display: inline-block; /*снаружи как строчный, внутри как блочный*/
+    color: inherit; /*наследует от родителя*/
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    /*display: block;
+    object-fit: cover;*/
+}
+
+body{
+    min-width: 320px;
+    word-break: normal; /*для правильного переноса*/
+    font-family: 'Montserrat', 'Roboto', san-serif;
+}
+
+/* global style - обнуление для списков и кнопок*/
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.btn-reset {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+:root {
+    --white-color: #FFF;
+    --light-grey: #828282;
+}
+/*body ----------------------------------------------------------------------------*/
+
+body {
+    background-color: var(--white-color);
+}
+
+.container {
+    max-width: 1000px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5rem;/*2rem*/
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profile {
+    grid-column: 1 / -1;
+    margin-bottom: 2rem;
+}
+
+.group-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-name {
+    font-family: "SfPro-Bold", sans-serif;
+    font-size: clamp(16px, 7vw, 36px);
+    margin-top: 1rem;
+}
+
+.profile-title {
+    font-family: "SfPro-Regular", sans-serif;
+    font-size: clamp(10px, 5vw, 18px);
+    color: var(--light-grey);
+    margin-bottom: 0.3rem;
+}
+
+.description {
+    font-family: "SfPro-Regular", sans-serif;
+    font-size: clamp(10px, 5vw, 16px);
+}
+
+/*--------------------------------------------------------------*/
+.title {
+    font-family: "SfPro-Bold", sans-serif;
+    font-size: clamp(14px, 7vw, 24px);
+}
+
+.skills-list, .languages-list {
+    line-height: 2;
+}
+
+.h4 {
+    font-family: "SfPro-Bold", sans-serif;
+    font-size: clamp(10px, 5vw, 16px);
+    margin: 0.3rem 0;
+}
+
+.grey-title {
+    font-family: "SfPro-Regular", sans-serif;
+    font-size: clamp(10px, 5vw, 16px);
+    color: var(--light-grey);
+    margin-top: 1rem;
+
+}
+
+.grey-title-dop {
+    font-family: "SfPro-Regular", sans-serif;
+    font-size: clamp(8px, 5vw, 12px);
+    color: var(--light-grey);
+}
+
+/*
+.exp-h3 {
+    margin-bottom: 2rem;
+}*/
+.experience {
+    margin-top: 2rem;
+}

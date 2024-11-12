@@ -1,0 +1,11 @@
+@media only screen and (max-width:768px) {
+    .container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 3rem;
+    }
+    .group-2{
+        align-items: baseline;
+        margin-top: 3rem;
+    }
+}
